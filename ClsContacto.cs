@@ -29,7 +29,7 @@ namespace PryBDContacto
                     comando.Parameters.AddWithValue("@Correo", correo);
                     comando.Parameters.AddWithValue("@Categoria", categoria);
 
-                    int resultado = comando.ExecuteNonQuery();
+                    int resultado = comando.ExecuteNonQuery(); // No devuelve datos, solo un número.
 
                     if (resultado > 0)
                     {
@@ -47,18 +47,17 @@ namespace PryBDContacto
             }
         }
 
-        public static DataTable Mostrar()
+        public static DataTable Mostrar() //tabla en memoria
         {
             DataTable tabla = new DataTable();
-            string connectionString = "Server=localhost\\SQLEXPRESS;Database=Comercio;Trusted_Connection=True;";
-
-            using (SqlConnection connection = new SqlConnection(connectionString))
+            
+            using (SqlConnection conexion = ClsConexion.ObtenerConexion())
             {
                 try
                 {
-                    connection.Open();
+                    conexion.Open();
                     string query = "SELECT Nombre, Apellido, Telefono, Correo, Categoria FROM Contacto";
-                    SqlDataAdapter adapter = new SqlDataAdapter(query, connection);
+                    SqlDataAdapter adapter = new SqlDataAdapter(query, conexion);
                     adapter.Fill(tabla);
                 }
                 catch (Exception ex)

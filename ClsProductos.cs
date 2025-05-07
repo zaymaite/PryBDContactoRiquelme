@@ -51,22 +51,20 @@ namespace PryBDContacto
         public DataTable Mostrar()
         {
             DataTable tabla = new DataTable();
-            string connectionString = "Server=localhost\\SQLEXPRESS;Database=Comercio;Trusted_Connection=True;";
-
-            using (SqlConnection connection = new SqlConnection(connectionString))
+            
+            using (SqlConnection conexion = ClsConexion.ObtenerConexion())
             {
                 try
                 {
-                    connection.Open();
+                    conexion.Open();
                     string query = "SELECT Nombre, Descripcion, Precio, Stock, Categoria FROM Productos";
-                    SqlDataAdapter adapter = new SqlDataAdapter(query, connection);
+                    SqlDataAdapter adapter = new SqlDataAdapter(query, conexion);
                     adapter.Fill(tabla);
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show("❌ Error al obtener los productos: " + ex.Message + "\n" +
-                    "Tipo: " + ex.GetType().ToString() + "\n" +
-                    "StackTrace: " + ex.StackTrace);
+                    MessageBox.Show("❌ Error al obtener los productos: " + ex.Message);
+                    
                 }
             }
             return tabla;
@@ -106,7 +104,7 @@ namespace PryBDContacto
             {
                 try
                 {
-                    List<string> condiciones = new List<string>();
+                    List<string> condiciones = new List<string>(); // representa una lista de strings que guardará las partes del WHERE,
                     SqlCommand comando = new SqlCommand();
                     comando.Connection = conexion;
 
@@ -131,7 +129,7 @@ namespace PryBDContacto
                     string query = "SELECT * FROM Productos";
 
                     if (condiciones.Count > 0)
-                    {
+                    {                        //une las condiciones
                         query += " WHERE " + string.Join(" AND ", condiciones);
                     }
 

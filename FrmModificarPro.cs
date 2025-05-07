@@ -57,11 +57,11 @@ namespace PryBDContacto
             if (TxtDescripcion.Text == "" && TxtNombre.Text == "" && TxtPrecio.Text == "")
             {
                 MessageBox.Show("❗ Por favor ingrese el nombre y el nuevo precio.");
-                return;
+                return; //No sigue ejecutando lo que viene después
             }
 
             string nombre = TxtNombre.Text;
-            if (!decimal.TryParse(TxtPrecio.Text, out decimal nuevoPrecio))
+            if (!decimal.TryParse(TxtPrecio.Text, out decimal nuevoPrecio))//va a recibir el resultado de la conversión.
             {
                 MessageBox.Show("⚠️ Ingrese un precio válido.");
                 return;

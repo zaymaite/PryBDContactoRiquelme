@@ -14,20 +14,21 @@ namespace PryBDContacto
     {
         public  void CargarCategorias(ComboBox combo, bool usarID)
         {
+            //Libera la conexion al final
             using (SqlConnection conexion = ClsConexion.ObtenerConexion())
             {
                 try
                 {
                     string query = "SELECT Id, Nombre FROM Categorias";
                     SqlCommand comando = new SqlCommand(query, conexion);
-                    SqlDataReader leer = comando.ExecuteReader();
+                    SqlDataReader leer = comando.ExecuteReader(); //ejecuta la consulta y devuelve SqlDataReader
                     if(usarID)
                     {
                         DataTable tabla = new DataTable();
                         tabla.Load(leer);
                         combo.DataSource = tabla;
-                        combo.DisplayMember = "Nombre";
-                        combo.ValueMember = "Id";
+                        combo.DisplayMember = "Nombre"; 
+                        combo.ValueMember = "Id"; //qué columna del origen de datos se usará como "valor" interno
                     }
                     else
                     {
@@ -48,9 +49,5 @@ namespace PryBDContacto
             }
         }
 
-        public void CargarCmbConId(ComboBox combo)
-        {
-
-        }
     }
 }

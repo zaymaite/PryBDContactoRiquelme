@@ -63,8 +63,10 @@ namespace PryBDContacto
             int codigo = 0;
             if (!string.IsNullOrWhiteSpace(TxtCodigo.Text))
             {
-                int.TryParse(TxtCodigo.Text.Trim(), out codigo);
+                //Intenta convertir texto a número sin errores                                  
+                int.TryParse(TxtCodigo.Text.Trim(), out codigo); //va a recibir el resultado de la conversión.
             }
+            // ? si no es nulo se hace lo otro
             string categoria = CmbCategoria.SelectedValue?.ToString() ?? "";
             DataTable resultado = productos.ConsultarProductos(codigo, TxtNombre.Text, categoria);
             if (resultado != null && resultado.Rows.Count > 0)
@@ -82,6 +84,7 @@ namespace PryBDContacto
             CmbCategoria.SelectedIndex = -1;
         }
 
+        #region AbrirForms
         private void FrmConsultarStock_Load(object sender, EventArgs e)
         {
             timerMenu.Interval = 15;
@@ -128,6 +131,8 @@ namespace PryBDContacto
         {
             this.Close();
         }
+        #endregion
+
     }
 
 }

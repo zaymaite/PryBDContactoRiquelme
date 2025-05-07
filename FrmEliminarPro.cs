@@ -22,7 +22,7 @@ namespace PryBDContacto
             string nombre = TxtNombre.Text.Trim();
             
             if (nombre != "")
-            {
+            {                                             //poder agregar la variable
                 DialogResult confirmacion = MessageBox.Show($"¿Eliminar a {nombre}?", "Confirmar eliminación", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
 
                 if (confirmacion == DialogResult.Yes)
@@ -58,8 +58,8 @@ namespace PryBDContacto
         {
             if (menuExpandido)
             {
-                panelMenu.Width -= 10;
-                panelEliminar.Left -= 10;
+                panelMenu.Width -= 10; //achica
+                panelEliminar.Left -= 10; //mueve
                 if (panelMenu.Width <= 0)
                 {
                     timerMenu.Stop();
@@ -83,7 +83,7 @@ namespace PryBDContacto
 
         private void FrmEliminarPro_Load(object sender, EventArgs e)
         {
-            timerMenu.Interval = 15;
+            timerMenu.Interval = 15; // ocurre cada 15 milisegundos
         }
         #region AbrirForm
         private void BtnEliminarCon_Click(object sender, EventArgs e)
