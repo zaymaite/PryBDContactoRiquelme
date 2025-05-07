@@ -34,8 +34,8 @@
             this.label6 = new System.Windows.Forms.Label();
             this.TxtNombre = new System.Windows.Forms.TextBox();
             this.TxtApellido = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.LblApellido = new System.Windows.Forms.Label();
+            this.LblNombre = new System.Windows.Forms.Label();
             this.DgvContactos = new System.Windows.Forms.DataGridView();
             this.timerMenu = new System.Windows.Forms.Timer(this.components);
             this.panelMenu = new System.Windows.Forms.Panel();
@@ -105,25 +105,25 @@
             this.TxtApellido.TabIndex = 20;
             this.TxtApellido.TextChanged += new System.EventHandler(this.TxtApellido_TextChanged);
             // 
-            // label2
+            // LblApellido
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(28, 102);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(57, 16);
-            this.label2.TabIndex = 15;
-            this.label2.Text = "Apellido";
+            this.LblApellido.AutoSize = true;
+            this.LblApellido.Location = new System.Drawing.Point(28, 102);
+            this.LblApellido.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.LblApellido.Name = "LblApellido";
+            this.LblApellido.Size = new System.Drawing.Size(57, 16);
+            this.LblApellido.TabIndex = 15;
+            this.LblApellido.Text = "Apellido";
             // 
-            // label1
+            // LblNombre
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(29, 73);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(56, 16);
-            this.label1.TabIndex = 14;
-            this.label1.Text = "Nombre";
+            this.LblNombre.AutoSize = true;
+            this.LblNombre.Location = new System.Drawing.Point(29, 73);
+            this.LblNombre.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.LblNombre.Name = "LblNombre";
+            this.LblNombre.Size = new System.Drawing.Size(56, 16);
+            this.LblNombre.TabIndex = 14;
+            this.LblNombre.Text = "Nombre";
             // 
             // DgvContactos
             // 
@@ -335,8 +335,8 @@
             this.panelEliminar.Controls.Add(this.DgvContactos);
             this.panelEliminar.Controls.Add(this.TxtNombre);
             this.panelEliminar.Controls.Add(this.TxtApellido);
-            this.panelEliminar.Controls.Add(this.label2);
-            this.panelEliminar.Controls.Add(this.label1);
+            this.panelEliminar.Controls.Add(this.LblApellido);
+            this.panelEliminar.Controls.Add(this.LblNombre);
             this.panelEliminar.Location = new System.Drawing.Point(56, -1);
             this.panelEliminar.Name = "panelEliminar";
             this.panelEliminar.Size = new System.Drawing.Size(529, 517);
@@ -373,8 +373,8 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox TxtNombre;
         private System.Windows.Forms.TextBox TxtApellido;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label LblApellido;
+        private System.Windows.Forms.Label LblNombre;
         private System.Windows.Forms.DataGridView DgvContactos;
         private System.Windows.Forms.Timer timerMenu;
         private System.Windows.Forms.Panel panelMenu;

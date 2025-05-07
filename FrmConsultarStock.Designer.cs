@@ -32,14 +32,14 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmConsultarStock));
             this.panel1 = new System.Windows.Forms.Panel();
             this.TxtCodigo = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
+            this.LblCodigo = new System.Windows.Forms.Label();
             this.DgvProductos = new System.Windows.Forms.DataGridView();
             this.BtnMostrar = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.TxtNombre = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.LblNombre = new System.Windows.Forms.Label();
             this.CmbCategoria = new System.Windows.Forms.ComboBox();
-            this.label5 = new System.Windows.Forms.Label();
+            this.LblCategoria = new System.Windows.Forms.Label();
             this.timerMenu = new System.Windows.Forms.Timer(this.components);
             this.PicMenu = new System.Windows.Forms.PictureBox();
             this.panelMenu = new System.Windows.Forms.Panel();
@@ -65,14 +65,14 @@
             // panel1
             // 
             this.panel1.Controls.Add(this.TxtCodigo);
-            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.LblCodigo);
             this.panel1.Controls.Add(this.DgvProductos);
             this.panel1.Controls.Add(this.BtnMostrar);
             this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.TxtNombre);
-            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.LblNombre);
             this.panel1.Controls.Add(this.CmbCategoria);
-            this.panel1.Controls.Add(this.label5);
+            this.panel1.Controls.Add(this.LblCategoria);
             this.panel1.Location = new System.Drawing.Point(61, 1);
             this.panel1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.panel1.Name = "panel1";
@@ -87,15 +87,15 @@
             this.TxtCodigo.Size = new System.Drawing.Size(85, 21);
             this.TxtCodigo.TabIndex = 32;
             // 
-            // label2
+            // LblCodigo
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(84, 89);
-            this.label2.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(118, 15);
-            this.label2.TabIndex = 31;
-            this.label2.Text = "Código del Producto";
+            this.LblCodigo.AutoSize = true;
+            this.LblCodigo.Location = new System.Drawing.Point(84, 89);
+            this.LblCodigo.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.LblCodigo.Name = "LblCodigo";
+            this.LblCodigo.Size = new System.Drawing.Size(118, 15);
+            this.LblCodigo.TabIndex = 31;
+            this.LblCodigo.Text = "Código del Producto";
             // 
             // DgvProductos
             // 
@@ -143,15 +143,15 @@
             this.TxtNombre.Size = new System.Drawing.Size(212, 21);
             this.TxtNombre.TabIndex = 27;
             // 
-            // label1
+            // LblNombre
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(84, 123);
-            this.label1.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(124, 15);
-            this.label1.TabIndex = 26;
-            this.label1.Text = "Nombre del Producto";
+            this.LblNombre.AutoSize = true;
+            this.LblNombre.Location = new System.Drawing.Point(84, 123);
+            this.LblNombre.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.LblNombre.Name = "LblNombre";
+            this.LblNombre.Size = new System.Drawing.Size(124, 15);
+            this.LblNombre.TabIndex = 26;
+            this.LblNombre.Text = "Nombre del Producto";
             // 
             // CmbCategoria
             // 
@@ -163,16 +163,16 @@
             this.CmbCategoria.Size = new System.Drawing.Size(140, 23);
             this.CmbCategoria.TabIndex = 25;
             // 
-            // label5
+            // LblCategoria
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(138, 154);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(60, 15);
-            this.label5.TabIndex = 24;
-            this.label5.Text = "Categoria";
+            this.LblCategoria.AutoSize = true;
+            this.LblCategoria.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblCategoria.Location = new System.Drawing.Point(138, 154);
+            this.LblCategoria.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.LblCategoria.Name = "LblCategoria";
+            this.LblCategoria.Size = new System.Drawing.Size(60, 15);
+            this.LblCategoria.TabIndex = 24;
+            this.LblCategoria.Text = "Categoria";
             // 
             // timerMenu
             // 
@@ -408,11 +408,11 @@
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.ComboBox CmbCategoria;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label LblCategoria;
         private System.Windows.Forms.Button BtnMostrar;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox TxtNombre;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label LblNombre;
         private System.Windows.Forms.DataGridView DgvProductos;
         private System.Windows.Forms.Timer timerMenu;
         private System.Windows.Forms.PictureBox PicMenu;
@@ -431,6 +431,6 @@
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.Button BtnEliminar;
         private System.Windows.Forms.TextBox TxtCodigo;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label LblCodigo;
     }
 }

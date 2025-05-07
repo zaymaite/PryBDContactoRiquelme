@@ -32,14 +32,14 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmModificarPro));
             this.panel1 = new System.Windows.Forms.Panel();
             this.TxtDescripcion = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
+            this.LblDescripcion = new System.Windows.Forms.Label();
             this.TxtPrecio = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
+            this.LblPrecio = new System.Windows.Forms.Label();
             this.DgvProductos = new System.Windows.Forms.DataGridView();
             this.BtnModificar = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.TxtNombre = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.LblNombre = new System.Windows.Forms.Label();
             this.PicMenu = new System.Windows.Forms.PictureBox();
             this.panelMenu = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
@@ -65,14 +65,14 @@
             // panel1
             // 
             this.panel1.Controls.Add(this.TxtDescripcion);
-            this.panel1.Controls.Add(this.label3);
+            this.panel1.Controls.Add(this.LblDescripcion);
             this.panel1.Controls.Add(this.TxtPrecio);
-            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.LblPrecio);
             this.panel1.Controls.Add(this.DgvProductos);
             this.panel1.Controls.Add(this.BtnModificar);
             this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.TxtNombre);
-            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.LblNombre);
             this.panel1.Location = new System.Drawing.Point(58, 1);
             this.panel1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.panel1.Name = "panel1";
@@ -87,15 +87,15 @@
             this.TxtDescripcion.Size = new System.Drawing.Size(288, 20);
             this.TxtDescripcion.TabIndex = 34;
             // 
-            // label3
+            // LblDescripcion
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(125, 168);
-            this.label3.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(63, 13);
-            this.label3.TabIndex = 33;
-            this.label3.Text = "Descripción";
+            this.LblDescripcion.AutoSize = true;
+            this.LblDescripcion.Location = new System.Drawing.Point(125, 168);
+            this.LblDescripcion.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.LblDescripcion.Name = "LblDescripcion";
+            this.LblDescripcion.Size = new System.Drawing.Size(63, 13);
+            this.LblDescripcion.TabIndex = 33;
+            this.LblDescripcion.Text = "Descripción";
             // 
             // TxtPrecio
             // 
@@ -105,15 +105,15 @@
             this.TxtPrecio.Size = new System.Drawing.Size(119, 20);
             this.TxtPrecio.TabIndex = 32;
             // 
-            // label2
+            // LblPrecio
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(88, 132);
-            this.label2.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(100, 13);
-            this.label2.TabIndex = 31;
-            this.label2.Text = "Precio del Producto";
+            this.LblPrecio.AutoSize = true;
+            this.LblPrecio.Location = new System.Drawing.Point(88, 132);
+            this.LblPrecio.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.LblPrecio.Name = "LblPrecio";
+            this.LblPrecio.Size = new System.Drawing.Size(100, 13);
+            this.LblPrecio.TabIndex = 31;
+            this.LblPrecio.Text = "Precio del Producto";
             // 
             // DgvProductos
             // 
@@ -161,15 +161,15 @@
             this.TxtNombre.Size = new System.Drawing.Size(212, 20);
             this.TxtNombre.TabIndex = 27;
             // 
-            // label1
+            // LblNombre
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(88, 96);
-            this.label1.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(107, 13);
-            this.label1.TabIndex = 26;
-            this.label1.Text = "Nombre del Producto";
+            this.LblNombre.AutoSize = true;
+            this.LblNombre.Location = new System.Drawing.Point(88, 96);
+            this.LblNombre.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.LblNombre.Name = "LblNombre";
+            this.LblNombre.Size = new System.Drawing.Size(107, 13);
+            this.LblNombre.TabIndex = 26;
+            this.LblNombre.Text = "Nombre del Producto";
             // 
             // PicMenu
             // 
@@ -406,9 +406,9 @@
         private System.Windows.Forms.Button BtnModificar;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox TxtNombre;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label LblNombre;
         private System.Windows.Forms.TextBox TxtPrecio;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label LblPrecio;
         private System.Windows.Forms.PictureBox PicMenu;
         private System.Windows.Forms.Panel panelMenu;
         private System.Windows.Forms.Panel panel7;
@@ -426,6 +426,6 @@
         private System.Windows.Forms.Button BtnEliminar;
         private System.Windows.Forms.Timer timerMenu;
         private System.Windows.Forms.TextBox TxtDescripcion;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label LblDescripcion;
     }
 }

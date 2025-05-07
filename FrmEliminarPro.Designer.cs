@@ -35,7 +35,7 @@
             this.label6 = new System.Windows.Forms.Label();
             this.DgvProductos = new System.Windows.Forms.DataGridView();
             this.TxtNombre = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.LblNombre = new System.Windows.Forms.Label();
             this.PicMenu = new System.Windows.Forms.PictureBox();
             this.panelMenu = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
@@ -64,7 +64,7 @@
             this.panelEliminar.Controls.Add(this.label6);
             this.panelEliminar.Controls.Add(this.DgvProductos);
             this.panelEliminar.Controls.Add(this.TxtNombre);
-            this.panelEliminar.Controls.Add(this.label1);
+            this.panelEliminar.Controls.Add(this.LblNombre);
             this.panelEliminar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panelEliminar.Location = new System.Drawing.Point(70, 0);
             this.panelEliminar.Name = "panelEliminar";
@@ -116,15 +116,15 @@
             this.TxtNombre.TabIndex = 19;
             this.TxtNombre.TextChanged += new System.EventHandler(this.TxtNombre_TextChanged);
             // 
-            // label1
+            // LblNombre
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(62, 91);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(124, 15);
-            this.label1.TabIndex = 14;
-            this.label1.Text = "Nombre del Producto";
+            this.LblNombre.AutoSize = true;
+            this.LblNombre.Location = new System.Drawing.Point(62, 91);
+            this.LblNombre.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.LblNombre.Name = "LblNombre";
+            this.LblNombre.Size = new System.Drawing.Size(124, 15);
+            this.LblNombre.TabIndex = 14;
+            this.LblNombre.Text = "Nombre del Producto";
             // 
             // PicMenu
             // 
@@ -360,7 +360,7 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.DataGridView DgvProductos;
         private System.Windows.Forms.TextBox TxtNombre;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label LblNombre;
         private System.Windows.Forms.PictureBox PicMenu;
         private System.Windows.Forms.Panel panelMenu;
         private System.Windows.Forms.Panel panel7;

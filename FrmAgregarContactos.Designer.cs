@@ -30,11 +30,11 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmAgregarContactos));
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
+            this.LblNombre = new System.Windows.Forms.Label();
+            this.LblApellido = new System.Windows.Forms.Label();
+            this.LblTelefono = new System.Windows.Forms.Label();
+            this.LblCorreo = new System.Windows.Forms.Label();
+            this.LblCategoria = new System.Windows.Forms.Label();
             this.TxtNombre = new System.Windows.Forms.TextBox();
             this.TxtApellido = new System.Windows.Forms.TextBox();
             this.TxtTelefono = new System.Windows.Forms.TextBox();
@@ -66,55 +66,55 @@
             ((System.ComponentModel.ISupportInitialize)(this.DgvMostrar)).BeginInit();
             this.SuspendLayout();
             // 
-            // label1
+            // LblNombre
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(110, 59);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(52, 15);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Nombre";
+            this.LblNombre.AutoSize = true;
+            this.LblNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblNombre.Location = new System.Drawing.Point(110, 59);
+            this.LblNombre.Name = "LblNombre";
+            this.LblNombre.Size = new System.Drawing.Size(52, 15);
+            this.LblNombre.TabIndex = 0;
+            this.LblNombre.Text = "Nombre";
             // 
-            // label2
+            // LblApellido
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(110, 95);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(51, 15);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Apellido";
+            this.LblApellido.AutoSize = true;
+            this.LblApellido.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblApellido.Location = new System.Drawing.Point(110, 95);
+            this.LblApellido.Name = "LblApellido";
+            this.LblApellido.Size = new System.Drawing.Size(51, 15);
+            this.LblApellido.TabIndex = 1;
+            this.LblApellido.Text = "Apellido";
             // 
-            // label3
+            // LblTelefono
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(110, 167);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(55, 15);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Teléfono";
+            this.LblTelefono.AutoSize = true;
+            this.LblTelefono.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblTelefono.Location = new System.Drawing.Point(110, 167);
+            this.LblTelefono.Name = "LblTelefono";
+            this.LblTelefono.Size = new System.Drawing.Size(55, 15);
+            this.LblTelefono.TabIndex = 2;
+            this.LblTelefono.Text = "Teléfono";
             // 
-            // label4
+            // LblCorreo
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(110, 132);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(44, 15);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "Correo";
+            this.LblCorreo.AutoSize = true;
+            this.LblCorreo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblCorreo.Location = new System.Drawing.Point(110, 132);
+            this.LblCorreo.Name = "LblCorreo";
+            this.LblCorreo.Size = new System.Drawing.Size(44, 15);
+            this.LblCorreo.TabIndex = 3;
+            this.LblCorreo.Text = "Correo";
             // 
-            // label5
+            // LblCategoria
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(110, 206);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(60, 15);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "Categoria";
+            this.LblCategoria.AutoSize = true;
+            this.LblCategoria.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblCategoria.Location = new System.Drawing.Point(110, 206);
+            this.LblCategoria.Name = "LblCategoria";
+            this.LblCategoria.Size = new System.Drawing.Size(60, 15);
+            this.LblCategoria.TabIndex = 4;
+            this.LblCategoria.Text = "Categoria";
             // 
             // TxtNombre
             // 
@@ -405,11 +405,11 @@
             this.panelContenedor.Controls.Add(this.TxtTelefono);
             this.panelContenedor.Controls.Add(this.TxtNombre);
             this.panelContenedor.Controls.Add(this.TxtApellido);
-            this.panelContenedor.Controls.Add(this.label5);
-            this.panelContenedor.Controls.Add(this.label4);
-            this.panelContenedor.Controls.Add(this.label3);
-            this.panelContenedor.Controls.Add(this.label2);
-            this.panelContenedor.Controls.Add(this.label1);
+            this.panelContenedor.Controls.Add(this.LblCategoria);
+            this.panelContenedor.Controls.Add(this.LblCorreo);
+            this.panelContenedor.Controls.Add(this.LblTelefono);
+            this.panelContenedor.Controls.Add(this.LblApellido);
+            this.panelContenedor.Controls.Add(this.LblNombre);
             this.panelContenedor.Location = new System.Drawing.Point(74, -2);
             this.panelContenedor.Name = "panelContenedor";
             this.panelContenedor.Size = new System.Drawing.Size(593, 471);
@@ -450,11 +450,11 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label LblNombre;
+        private System.Windows.Forms.Label LblApellido;
+        private System.Windows.Forms.Label LblTelefono;
+        private System.Windows.Forms.Label LblCorreo;
+        private System.Windows.Forms.Label LblCategoria;
         private System.Windows.Forms.TextBox TxtNombre;
         private System.Windows.Forms.TextBox TxtApellido;
         private System.Windows.Forms.TextBox TxtTelefono;
